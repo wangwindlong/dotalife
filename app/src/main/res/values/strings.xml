@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">DotaLife</string>
+    <string name="app_name">云灵行者</string>
     <string name="action_settings">Settings</string>
-
 
     <string name="settings">Settings</string>
 
@@ -44,4 +43,88 @@
     ]]></string>
     <string name="dismiss">Dismiss</string>
     <string name="radiobutton_clickme">Radio button (click me)</string>
+
+
+    <string name="goal">Goal</string>
+    <string name="step_size">Step size</string>
+    <string name="account">Account</string>
+    <string name="goal_summary">Current goal: %,d steps</string>
+    <string name="step_size_summary">Current step size: %1$.2f %2$s</string>
+    <string name="sign_in">Sign in with your Google account to use the Achievements and Leaderboards features</string>
+    <string name="signed_in">Signed in as %s</string>
+    <string name="export_summary">Save your data in a .csv file</string>
+    <string name="export_title">Export/Backup</string>
+    <string name="import_summary">Imports previously saved data</string>
+    <string name="import_title">Import/Restore</string>
+    <string name="notification">Show notification</string>
+    <string name="set_goal">Set goal</string>
+    <string name="set_step_size">Set step size</string>
+    <string name="sign_out">Sign out</string>
+    <string name="file_cant_read">Error: %s can not be read</string>
+    <string name="error_file">Error accessing the file: %s</string>
+    <string name="error_external_storage_not_available">Error: External storage not available</string>
+    <string name="data_saved">Data saved in %s</string>
+    <string name="entries_imported">%d entries imported</string>
+    <string name="entries_ignored">%d entries were ignored as they did not contain valid data</string>
+    <string name="entries_skipped">%d entries were skipped as there already exists data for these days</string>
+    <string name="sign_in_necessary">Sign in necessary</string>
+    <string name="please_sign_in_with_your_google_account">Please sign in with your Google+ account to use this feature.</string>
+    <string name="steps">steps</string>
+    <string name="text_color">Text color:</string>
+    <string name="background_color">Background color:</string>
+    <string name="achievements">Achievements</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="faq">FAQ</string>
+    <string name="goal_reached_notification">Goal reached! %s steps and counting</string>
+    <string name="notification_text">%s steps to go</string>
+    <string name="total">Total</string>
+    <string name="notification_title">Pedometer is counting</string>
+    <string name="your_progress_will_be_shown_here_soon">Your progress will be shown here soon</string>
+    <string name="average">Average</string>
+    <string name="record">Record</string>
+    <string name="total_last_7_days">Total last 7 days</string>
+    <string name="average_last_7_days">Average last 7 days</string>
+    <string name="total_this_month">Total this month</string>
+    <string name="average_this_month">Average this month</string>
+    <string name="file_already_exists">File already exists. Are you sure you want to overwrite it?</string>
+    <string name="about_text_links">This app was created by Thomas Hoffmann (<a href="https://www.j4velin.de">www.j4velin.de</a>) and uses <a href="https://github.com/blackfizz/EazeGraph">EazeGraph</a> by Paul Cech and <a href="https://github.com/attenzione/android-ColorPickerPreference">ColorPickerPreference</a> by Sergey Margaritov.\n\nPedometer is open source! Get the code and the full list of contributors from <a href="https://github.com/j4velin/Pedometer">GitHub</a>.\n\n</string>
+    <string name="about_app_version">App version: %s</string>
+    <string name="since">Since %s</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="close">close</string>
+    <string name="no_split_active">No split counter active. Click start to count the steps from now on</string>
+    <string name="split_count">Split count</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="ispaused">Pedometer is paused</string>
+    <string name="pause_on_power_title">Pause while charging</string>
+    <string name="pause_on_power_summary">Pause Pedometer while device is charging</string>
+    <string name="no_sensor">Sensor not found</string>
+    <string name="no_sensor_explain">This app requires a dedicated hardware step sensor - which your device does not have. This app won\'t run on your device.</string>
+    <string name="permission_external_storage">No permission to access external storage</string>
+
+
+    <string name="leaderboard_most_steps_walked">1</string>
+    <string name="leaderboard_most_steps_walked_in_one_day">2</string>
+    <string name="leaderboard_highest_average">3</string>
+    <string name="achievement_boots_made_for_walking">4</string>
+    <string name="achievement_boots_made_for_walking_ii">5</string>
+    <string name="achievement_boots_made_for_walking_iii">6</string>
+    <string name="achievement_boots_made_for_walking_iv">7</string>
+    <string name="achievement_boots_made_for_walking_v">8</string>
+    <string name="achievement_stamina">9</string>
+    <string name="achievement_stamina_ii">10</string>
+    <string name="achievement_stamina_iii">11</string>
+    <string name="achievement_stamina_iv">12</string>
+    <string name="achievement_stamina_v">13</string>
+    <string name="achievement_stamina_vi">14</string>
+    <string name="achievement_marathon">15</string>
+    <string name="achievement_marathon_ii">16</string>
+    <string name="achievement_marathon_iii">17</string>
+    <string name="achievement_marathon_iv">18</string>
+    <string name="achievement_marathon_v">19</string>
+    <string name="achievement_continual_i">20</string>
+    <string name="achievement_continual_ii">21</string>
+    <string name="achievement_continual_iii">22</string>
 </resources>

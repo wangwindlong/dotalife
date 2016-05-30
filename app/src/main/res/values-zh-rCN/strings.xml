@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云灵行者</string>
+    <string name="goal">目标</string>
+    <string name="step_size">步幅</string>
+    <string name="about">关于</string>
+    <string name="account">帐户</string>
+    <string name="goal_summary">当前的目标: %,d 步</string>
+    <string name="step_size_summary">当前步幅: %1$.2f %2$s</string>
+    <string name="sign_in">登录您的谷歌帐户来使用成就和排行榜功能</string>
+    <string name="signed_in">以 %s 登录</string>
+    <string name="export_summary">保存您的数据到 csv 文件</string>
+    <string name="export_title">导出/保存</string>
+    <string name="import_summary">导入之前保存的数据</string>
+    <string name="import_title">导入/还原</string>
+    <string name="notification">显示通知</string>
+    <string name="set_goal">设定目标</string>
+    <string name="set_step_size">设定步幅</string>
+    <string name="sign_out">登出</string>
+    <string name="file_cant_read">错误：无法读取 %s</string>
+    <string name="error_file">访问文件错误：%s</string>
+    <string name="error_external_storage_not_available">错误：外部存储不可用</string>
+    <string name="data_saved">数据保存到 %s</string>
+    <string name="entries_imported">%d 项条目已导入</string>
+    <string name="entries_ignored">%d 项条目被跳过，因为它们不包含有效数据</string>
+    <string name="sign_in_necessary">必须要登录</string>
+    <string name="please_sign_in_with_your_google_account">请登录您的 Google+ 帐户才能使用此功能。</string>
+    <string name="steps">步</string>
+    <string name="text_color">文字颜色：</string>
+    <string name="background_color">背景颜色：</string>
+    <string name="settings">设置</string>
+    <string name="achievements">成就</string>
+    <string name="leaderboard">排行榜</string>
+    <string name="faq">常见问题</string>
+    <string name="goal_reached_notification">达成目标！已走了 %s 步</string>
+    <string name="notification_text">还有 %s 步</string>
+    <string name="total">共计</string>
+    <string name="notification_title">Pedometer 正在记步</string>
+    <string name="your_progress_will_be_shown_here_soon">您的进度很快会在这显示</string>
+    <string name="average">每日</string>
+
+    <string name="record">最高记录</string>
+    <string name="total_last_7_days">本周统计</string>
+    <string name="average_last_7_days">本周平均</string>
+    <string name="total_this_month">本月统计</string>
+    <string name="average_this_month">本月平均</string>
+    <string name="file_already_exists">已有相同存档，您确定要取代它吗？</string>
+    <string name="about_text_links">本程式由 王云龙 根据 Thomas Hoffmann (<a href="http://www.j4velin-development.de">www.j4velin-development.de</a>) 改编而成，并使用了由 Paul Cech 开发的 <a href="https://github.com/blackfizz/EazeGraph">EazeGraph</a> 及 Sergey Margaritov 开发的 <a href="https://github.com/attenzione/android-ColorPickerPreference">ColorPickerPreference</a>。\n\nPedometer 是开源的！可从 <a href="https://github.com/j4velin/Pedometer">GitHub</a> 取得源码及完整的贡献者名單。\n\n</string>
+    <string name="about_app_version">程序版本：%s</string>
+    <string name="since">开始时间 %s</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="close">关闭</string>
+    <string name="no_split_active">沒有启用系统中的独立计步器。请点击启动开始记步</string>
+    <string name="split_count">独立计步器</string>
+    <string name="pause">暂停</string>
+    <string name="resume">恢复</string>
+    <string name="ispaused">云灵行者 目前暂停中</string>
+    <string name="pause_on_power_title">充电时暂停记步</string>
+    <string name="pause_on_power_summary">云灵行者 会在充电时暂停记步</string>
+</resources>
