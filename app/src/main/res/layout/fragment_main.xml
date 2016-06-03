@@ -9,10 +9,30 @@
                 tools:context=".ui.fragment.MainActivityFragment"
                 tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/hello"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/theme_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主题"/>
+
+        <Button
+            android:id="@+id/pedometor_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记步"/>
+
+        <Button
+            android:id="@+id/rxjava_retrofit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rxjavaRetrofitDemo"/>
+    </LinearLayout>
+
 
 </RelativeLayout>

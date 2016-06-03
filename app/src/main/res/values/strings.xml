@@ -127,4 +127,6 @@
     <string name="achievement_continual_i">20</string>
     <string name="achievement_continual_ii">21</string>
     <string name="achievement_continual_iii">22</string>
+
+    <string name="rxjavaRetrofitDemo">rxjavaRetrofitDemo</string>
 </resources>
