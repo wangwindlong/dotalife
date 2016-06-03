@@ -4,7 +4,6 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
-
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(
@@ -12,21 +11,42 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
-
-
     defaultConfig {
         applicationId "xyz.abcapp.dotalife"
         minSdkVersion 15
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
+        resConfig("zh")
     }
 
     signingConfigs {
-        release
+        def Properties localProps = new Properties()
+        localProps.load(new FileInputStream(file('../local.properties')))
+        def Properties keyProps = new Properties()
+        if (localProps['keystore.props.file']) {
+            keyProps.load(new FileInputStream(file(localProps['keystore.props.file'])))
+        } else {
+            keyProps["store"] = '../buildsystem/debug.keystore'
+            keyProps["alias"] = 'android'
+            keyProps["storePass"] = 'androiddebugkey'
+            keyProps["pass"] = 'android'
+        }
+
+        debug {
+            storeFile file(keyProps["store"])
+            keyAlias keyProps["alias"]
+            storePassword keyProps["storePass"]
+            keyPassword keyProps["pass"]
+        }
+
+        release {
+            assert localProps['keystore.props.file'];
+            storeFile file(keyProps["store"])
+            keyAlias keyProps["alias"]
+            storePassword keyProps["storePass"]
+            keyPassword keyProps["pass"]
+        }
     }
 
     productFlavors {
@@ -39,8 +59,8 @@ android {
             signingConfig signingConfigs.release
             zipAlignEnabled true
             minifyEnabled true
-            shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
             debuggable true
@@ -48,6 +68,10 @@ android {
             zipAlignEnabled true
             minifyEnabled false
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
@@ -71,16 +95,18 @@ dependencies {
     playCompile 'com.google.android.gms:play-services-fitness:9.0.0'
     playCompile 'com.google.android.gms:play-services-games:9.0.0'
     playCompile 'com.google.android.gms:play-services-identity:9.0.0'
+
+
 }
 
-def props = new Properties()
-
-props.load(new FileInputStream(project.file("key.properties")))
-
-android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
-
-android.signingConfigs.release.storePassword props.keyStorePassword
-
-android.signingConfigs.release.keyAlias props.keyAlias
-
-android.signingConfigs.release.keyPassword props.keyAliasPassword
+//def props = new Properties()
+//
+//props.load(new FileInputStream(project.file("key.properties")))
+//
+//android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
+//
+//android.signingConfigs.release.storePassword props.keyStorePassword
+//
+//android.signingConfigs.release.keyAlias props.keyAlias
+//
+//android.signingConfigs.release.keyPassword props.keyAliasPassword
