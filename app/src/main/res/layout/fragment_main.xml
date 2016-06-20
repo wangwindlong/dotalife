@@ -10,6 +10,7 @@
                 tools:showIn="@layout/activity_main">
 
     <LinearLayout
+        android:id="@+id/main_content_ll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -34,5 +35,12 @@
             android:text="@string/rxjavaRetrofitDemo"/>
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_content_ll"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_account_logo_twitter_mdpi"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>
